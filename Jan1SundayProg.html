@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Jan1SundayProg</title>
+	<script type="text/javascript">
+	function myFun(){
+		var startyear=2017,endyear=2015;
+		count=0;
+		for(var i=startyear;i<endyear;i++){
+			var date = new Date(i,0,1);
+			if(date.getDay()==0){
+				document.write("year "+ i + " has a january 1 on sunday"+"<br>");
+				count+=1;
+			}
+			
+		}
+		//alert(count+"years has january 1 on sunday");
+	}
+	</script>
+</head>
+<body>
+	<h3>This program shows the number of years whic has 1st January is being a Sunday between 2017 and 2050</h3>
+	<form>
+		<input type="button" onclick="myFun()" value="click here"/>
+	</form>
+</body>
+
+</html>

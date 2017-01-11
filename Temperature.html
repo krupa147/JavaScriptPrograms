@@ -1,0 +1,48 @@
+<!Doctype html> 
+
+<html>
+
+<head>
+<title>temperatureProgram</title>
+	<script type="text/javascript">
+		
+		
+		function validation(temperatureToConvert){
+			if(isNaN(temperatureToConvert)){
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+		
+		function convertFehrenhit(){
+			var temperatureToConvert = document.getElementById("temperature").value;
+			if(validation(temperatureToConvert)){
+				var temperatureFehrenhit = (temperatureToConvert*(9/5))+32 ;
+				alert(temperatureFehrenhit);
+			}
+			else{
+				alert("enter valid temperature");
+			}
+		}
+		
+		function convertCelcius(){
+			var temperatureToConvert = document.getElementById("temperature").value;
+				if(validation(temperatureToConvert)){
+				var temperatureCelcius = (temperatureToConvert-32)*5/9;
+				alert(temperatureCelcius);
+			}
+			
+			else{
+				alert("enter valid temperature");
+			}
+					
+		}
+	</script>
+</head>
+
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+<head>
+	<title>fibonnaciseries</title>
+	<script type="text/javascript">
+		function myFun(){
+			var numUpto = document.getElementById("num").value;
+			var a=0,b=1,i=0;
+			document.write("fibonnaci series:"+numUpto+"<br>");
+			document.write(a+", "+b);
+			
+			while(i<=numUpto){
+				i = a+b;
+				document.write(", "+i);
+				a=b;
+				b=i;
+			}
+		}
+	</script>
+</head
+
+<body>
+	<form>
+	<h4>Enter A number upto where you want to print fibonnaci series:</h4><br>
+	<input type="text" id="num"><br>
+	<input type="button" value="click here" onclick="myFun()">
+	</form>
+</body>
+
+</html>
